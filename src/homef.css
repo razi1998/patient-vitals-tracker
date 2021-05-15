@@ -1,0 +1,21 @@
+.base{
+  
+    background-color:rgb(153, 135, 221);
+  }
+  
+.main-container {
+    
+    text-align:center;
+    
+  
+  }
+  .foot{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width:100%;
+    background-color: black;
+    color:white;
+    text-align: center;
+   }
+   
