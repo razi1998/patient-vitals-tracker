@@ -76,7 +76,6 @@ const Download = (props) => {
             </tr>
           </thead>
           <tbody>
-            
           <tr>
                   <th scope="row">{s.date}</th>
                   <td>{s.temp}</td>
