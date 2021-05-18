@@ -245,7 +245,7 @@ app.get("/patient/:patientno",(req,res)=>{
 })
 app.get("/user/:id",(req,res)=>{
     console.log("gettin======",req.params.id)
-    User.findOneAndUpdate({regno:req.params.id}).then(data=>{
+    User.findOne({regno:req.params.id}).then(data=>{
         res.send(data)
     }).catch((err)=>{
         res.send({
@@ -255,7 +255,7 @@ app.get("/user/:id",(req,res)=>{
 })
 app.get("/doctor/:id",(req,res)=>{
     console.log("regno is coming",req.params.regno)
-    Doctor.findOneAndUpdate({regno:req.params.id}).then(data=>{
+    Doctor.findOne({regno:req.params.id}).then(data=>{
         res.send(data)
     }).catch((err)=>{
         res.send({
